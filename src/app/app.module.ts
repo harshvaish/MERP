@@ -21,4 +21,4 @@ import { DeepakdummyComponent } from './deepakdummy/deepakdummy.component';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule {} 
