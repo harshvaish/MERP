@@ -1,0 +1,67 @@
+<ion-header>
+    <ion-toolbar color="dark" class="header">
+       <ion-buttons slot="start">
+        <button class="home-icon"  routerLink="/home" ><ion-icon name="home"></ion-icon></button>
+    </ion-buttons>
+      <ion-title class="title-left">
+       Message
+      </ion-title>
+      
+      <ion-buttons slot="end">
+          <button  class="home-icon" > <h5>Edit</h5> </button>
+      </ion-buttons>
+        
+    <ion-buttons slot="end">
+        <button  class="home-icon" (click)="presentModal()" > <ion-icon name="refresh"></ion-icon> </button>
+    </ion-buttons>
+      
+  </ion-toolbar>
+  </ion-header>
+  
+
+<ion-content>
+    <ion-card  class="message-box" *ngFor="let message of messages">
+        <ion-card-content no-padding>
+              <ion-grid>
+                  <ion-row>
+                      <ion-col size="7">
+                        <h3 class="msg-heading">{{message.name}}</h3>
+                        <h5 class="msg-locate">{{message.locate}}</h5>
+                        <p class="msg-category">{{message.category}}</p>
+                      </ion-col>
+                      <ion-col  size="3" class="text-right">
+                        <h5>{{message.date}}</h5>
+                        <p>{{message.time}}</p>
+                      </ion-col>
+                      <ion-col  size="2">
+                          <ion-icon name="close" class="msg-dlt"></ion-icon> 
+                      </ion-col> 
+                    </ion-row>
+                        </ion-grid>
+                           </ion-card-content>
+      </ion-card>
+
+
+
+      <!--<ion-card  class="message-box">
+          <ion-card-content no-padding>
+                <ion-grid>
+                    <ion-row>
+                        <ion-col size="7">
+                          <h3 class="msg-heading">Sumeet Zade</h3>
+                          <h5 class="msg-locate">Kolkata</h5>
+                          <p class="msg-category">Emergency</p>
+                        </ion-col>
+                        <ion-col  size="3" class="text-right">
+                          <h5>4/16/2019</h5>
+                          <p>3:30pm</p>
+                        </ion-col>
+                        <ion-col  size="2">
+                            <ion-icon name="close" class="msg-dlt"></ion-icon> 
+                        </ion-col> 
+                      </ion-row>
+                          </ion-grid>
+                             </ion-card-content>
+        </ion-card>-->
+    
+</ion-content>

@@ -1,0 +1,96 @@
+<ion-header>
+  <ion-toolbar color="dark" class="header">
+     <ion-buttons slot="start">
+      <button class="home-icon"  routerLink="/home"  ><ion-icon name="home"></ion-icon></button>
+  </ion-buttons>
+    <ion-title left>
+     Arodek
+    </ion-title>
+    <ion-buttons slot="end">
+        <button class="home-icon" routerLink="/icon-keys" > <ion-icon name="help-circle"></ion-icon> </button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+        <button  class="home-icon" ><ion-icon name="filing" routerLink="/files"></ion-icon></button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+        <button  class="home-icon"  routerLink="/update-profile"  ><ion-icon name="person"></ion-icon></button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+        <button  class="home-icon" routerLink="/login"  ><ion-icon name="power"></ion-icon></button>
+    </ion-buttons>
+    
+      
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content class="hm_sign_bg">
+  <ion-segment>
+      <ion-segment-button value="inactive"  routerLink="/files"  >
+        <ion-label>Files</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="active" routerLink="/emergencyphonenumber"  >
+        <ion-label >Emergency Phone<br> Numbers</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+
+
+  <div class="hm_project">
+  <!--<div class="hm_project_tab">
+    <ul>
+      <li [class.active]="tab=='active'" (click)="tab_swap('active')"> Ongoing</li>
+    <li [class.active]="tab=='inactive'" (click)="tab_swap('inactive')"> History</li>
+  </ul>
+    </div>-->
+    <div class="tabcontent" >
+      <ion-card  class="login-box">
+        <ion-card-header class="login-heading">
+           <ion-card-title  class="heading" >MERP EMERGENCY PHONE NUMBERS CONTACT LIST</ion-card-title>
+        </ion-card-header>
+       
+       <ion-card-content >
+             <ion-item  >
+             <h4>FOR ALL EMERGENCIES CALL 911</h4>
+              </ion-item>       
+       </ion-card-content>
+     
+       <ion-card-header class="table-heading">
+          <ion-card-title > 
+            <ion-row>
+              <ion-col size="7">
+                  <h5 class="msg-locate m-0">Contact</h5>
+                   </ion-col>
+              <ion-col  size="5" class="text-right">
+                <h5 class="m-0">Number</h5>
+                  </ion-col>
+             
+            </ion-row>
+          </ion-card-title>
+       </ion-card-header>
+      
+      <ion-card-content class="m-0 p-0 table" >
+          <ion-row>
+              <ion-col size="7">
+                  <h5 class="msg-locate m-0">Police/Fire/EMS</h5>
+                   </ion-col>
+              <ion-col  size="5" class="text-right">
+                <h5 class="m-0">911</h5>
+                  </ion-col>  
+            </ion-row>
+           
+             
+      </ion-card-content>
+    
+     
+     
+      </ion-card>
+
+     
+         
+        
+    </div>
+  
+  
+  </div>
+  </ion-content> 
+  

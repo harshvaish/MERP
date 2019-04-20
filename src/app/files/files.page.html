@@ -1,0 +1,81 @@
+<ion-header>
+    <ion-toolbar color="dark" class="header">
+       <ion-buttons slot="start">
+        <button class="home-icon" routerLink="/home"  ><ion-icon name="home"></ion-icon></button>
+    </ion-buttons>
+      <ion-title left>
+       Arodek
+      </ion-title>
+      <ion-buttons slot="end">
+          <button class="home-icon" routerLink="/icon-keys" > <ion-icon name="help-circle"></ion-icon> </button>
+      </ion-buttons>
+      <ion-buttons slot="end">
+          <button  class="home-icon" ><ion-icon name="filing" routerLink="/files"></ion-icon></button>
+      </ion-buttons>
+      <ion-buttons slot="end">
+          <button  class="home-icon"  routerLink="/update-profile"  ><ion-icon name="person"></ion-icon></button>
+      </ion-buttons>
+      <ion-buttons slot="end">
+          <button  class="home-icon" routerLink="/login" ><ion-icon name="power"></ion-icon></button>
+      </ion-buttons>
+      
+        
+    </ion-toolbar>
+  </ion-header>
+
+  
+<ion-content class="hm_sign_bg">
+    <ion-segment>
+        <ion-segment-button value="inactive"  routerLink="/files"  >
+          <ion-label>Files</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="active" routerLink="/emergencyphonenumber"  >
+          <ion-label >Emergency Phone<br> Numbers</ion-label>
+        </ion-segment-button>
+      </ion-segment>
+
+
+    <div class="hm_project">
+    <!--<div class="hm_project_tab">
+      <ul>
+        <li [class.active]="tab=='active'" (click)="tab_swap('active')"> Ongoing</li>
+      <li [class.active]="tab=='inactive'" (click)="tab_swap('inactive')"> History</li>
+    </ul>
+      </div>-->
+      <div class="tabcontent" [hidden]="tab=='inactive'"  >
+       
+          <ion-card>
+              <ion-card-header>
+                 
+                <ion-row>
+                  <ion-col col="4" center class="file-icon">
+                    <ion-icon name="filing" routerLink="/files"></ion-icon>
+                    <h5 class="m-0 fs-16">Folder</h5>
+                    </ion-col>
+                    <ion-col col="4" class="file-icon">
+                      <ion-icon name="filing" routerLink="/files"></ion-icon>
+                      <h5 class="m-0 fs-16 " >New Folder Test</h5>
+                      </ion-col>
+                     <ion-col col="4" class="file-icon">
+                      <ion-icon name="filing" routerLink="/files"></ion-icon>
+                      <h5 class="m-0 fs-16">Test Folder</h5>
+                    </ion-col>
+               </ion-row> 
+               <ion-row>
+                <ion-col col="4" center class="file-icon">
+                  <ion-icon name="filing" routerLink="/files"></ion-icon>
+                  <h5 class="m-0 fs-16">Folder</h5>
+                  </ion-col>
+                   
+                  
+             </ion-row> 
+     </ion-card-header>
+            </ion-card>
+           
+          
+      </div>
+    
+    
+    </div>
+    </ion-content> 
+    

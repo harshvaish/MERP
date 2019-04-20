@@ -1,0 +1,53 @@
+<ion-header>
+    <ion-toolbar color="dark" class="header">
+       <ion-buttons slot="start">
+        <button class="home-icon"  routerLink="/message" ><ion-icon name="menu"></ion-icon></button>
+    </ion-buttons>
+      <ion-title>
+       Message
+      </ion-title>
+      
+      <ion-buttons slot="end">
+          <button  class="home-icon" > <ion-icon name="refresh"></ion-icon> </button>
+      </ion-buttons>
+        
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <ion-card  class="emergency-box" >
+      <ion-card-content>
+            <ion-grid>
+              <ion-row  class="text-center"><h3 class="heading-title">Urgent Message</h3></ion-row>
+                <ion-row class="text-center">
+                   
+                    <ion-list class="full-width">
+                         <ion-item >
+                          <ion-label>Active Shooter</ion-label>
+                          <ion-select >
+                              <ion-select-option>Emergency</ion-select-option>
+                              <ion-select-option>Active Shooter</ion-select-option>
+                              <ion-select-option>Intruder</ion-select-option>
+                            </ion-select>
+                        </ion-item> 
+                      </ion-list>
+                  </ion-row>
+                  <ion-row  class="text-center"><h3  class="heading-title">Custom Message (Optional)</h3></ion-row>
+                  <ion-row>
+                     
+                      <ion-list  class="full-width">
+                      
+                          <ion-item>
+                               <ion-input></ion-input>
+                            </ion-item>
+                        </ion-list>
+                        <button class="btn-50" ion-button margin-right routerLink="/emergency">
+                          Send Message
+                         </button>
+                    </ion-row>
+                      </ion-grid>
+                         </ion-card-content>
+    </ion-card>
+  
+  </ion-content>
+  
