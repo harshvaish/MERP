@@ -1,112 +1,91 @@
 <ion-header>
-    <ion-toolbar color="dark" class="header">
-       <ion-buttons slot="start">
-        <button class="home-icon" routerLink="/home"  ><ion-icon name="home"></ion-icon></button>
+  <ion-toolbar color="dark" class="header">
+    <ion-buttons slot="start">
+      <button class="home-icon" routerLink="/home">
+        <ion-icon name="home"></ion-icon>
+      </button>
     </ion-buttons>
-      <ion-title left>
-       Arodek
-      </ion-title>
-      <ion-buttons slot="end">
-          <button class="home-icon" routerLink="/icon-keys" > <ion-icon name="help-circle"></ion-icon> </button>
-      </ion-buttons>
-      <ion-buttons slot="end">
-          <button  class="home-icon" routerLink="/files"><ion-icon name="filing" ></ion-icon></button>
-      </ion-buttons>
-      <ion-buttons slot="end">
-          <button  class="home-icon"  routerLink="/update-profile"  ><ion-icon name="person"></ion-icon></button>
-      </ion-buttons>
-      <ion-buttons slot="end">
-          <button  class="home-icon" routerLink="/login"  ><ion-icon name="power"></ion-icon></button>
-      </ion-buttons>
-      
-        
-    </ion-toolbar>
-  </ion-header>
-  <ion-content no-padding>
-      <ion-card>
-          <ion-card-content class="dashboard-box" >
+    <ion-title left>
+      Arodek
+    </ion-title>
+    <ion-buttons slot="end">
+      <button class="home-icon" routerLink="/icon-keys">
+        <ion-icon name="help-circle"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <button class="home-icon" routerLink="/files">
+        <ion-icon name="filing"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <button class="home-icon" routerLink="/update-profile">
+        <ion-icon name="person"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <button class="home-icon" routerLink="/login">
+        <ion-icon name="power"></ion-icon>
+      </button>
+    </ion-buttons>
+
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content no-padding class="responsiveGrid">
+
+  <ion-grid>
+    <ion-row>
+      <ion-col  size-lg="3" size-xs="12">
+          <ion-card >
+              <ion-card-content class="dashboard-box">
                 <ion-grid>
-                    <ion-row>
-                        <ion-col size="6" size-lg  class="top-btn ">
-                            <button class="btn" ion-button margin-right routerLink="/emergency">
-                             EMERGENCY
-                            </button>
-                        </ion-col>
-                        <ion-col size="6" size-lg  class="top-btn ">
-                            <button class="btn" ion-button margin-right routerLink="/active-shooter">
-                              ACTIVE SHOOTER
-                            </button>
-                        </ion-col>
-                      </ion-row>
-                      <ion-row>
-                          <ion-col size="6" size-lg   class="btm-btn ">
-                              <button class="btn" ion-button margin-right routerLink="/send-message">
-                               SEND MESSAGE
-                              </button>
-                          </ion-col>
-                          <ion-col size="6" size-lg  class=" btm-btn">
-                              <button class="btn" ion-button margin-right routerLink="/message">
-                                VIEW MESSAGE
-                              </button>
-                          </ion-col>
-                        </ion-row>
-                          </ion-grid>
-                             </ion-card-content>
-        </ion-card>
-  
-        <ion-grid>
-            <ion-row  *ngFor="let home of homecategory">
-                <ion-col size="12" size-lg  class="nopadding" >
-                    <button class="btn" ion-button margin-right routerLink="/{{home.href}}">
-                     {{home.headingtitle}} 
-                    </button>
-                </ion-col> 
-              </ion-row>
-             
-             <!-- <ion-row>
-                  <ion-col size="12" size-lg   class="nopadding">
-                      <button class="btn" ion-button margin-right routerLink="/home">
-                       TRANSPORTATION EMERGENCY PROCEDURE GUIDE
-                      </button>
-                  </ion-col> 
-                </ion-row>
-               
-                <ion-row>
-                    <ion-col size="12" size-lg  class="nopadding" >
-                        <button class="btn" ion-button margin-right routerLink="/home">
-                         BUILDING PERSONNEL PROCEDURE GUIDE
-                        </button>
-                    </ion-col> 
-                  </ion-row>
-                 
+          
                   <ion-row>
-                      <ion-col size="12" size-lg  class="nopadding" >
-                          <button class="btn" ion-button margin-right routerLink="/home">
-                            SAFE SCHOOL
-                          </button>
-                      </ion-col> 
-                    </ion-row>
-                   
-                    <ion-row>
-                        <ion-col size="12" size-lg  class="nopadding" >
-                            <button class="btn" ion-button margin-right routerLink="/home">
-                             TEST PLAN
-                            </button>
-                        </ion-col> 
-                      </ion-row>
-                     
-                      <ion-row>
-                          <ion-col size="12" size-lg  class="nopadding" >
-                              <button class="btn" ion-button margin-right routerLink="/home">
-                                TEST PLAN 2
-                              </button>
-                          </ion-col> 
-                        </ion-row>
-                       
-                        <ion-row>
+                    <ion-col size="6" size-lg class="top-btn ">
+                      <button class="btn" ion-button margin-right routerLink="/emergency">
+                        EMERGENCY
+                      </button>
+                    </ion-col>
+                    <ion-col size="6" size-lg class="top-btn ">
+                      <button class="btn" ion-button margin-right routerLink="/active-shooter">
+                        ACTIVE SHOOTER
+                      </button>
+                    </ion-col>
+                  </ion-row>
+                  <ion-row>
+                    <ion-col size="6" size-lg class="btm-btn ">
+                      <button class="btn" ion-button margin-right routerLink="/send-message">
+                        SEND MESSAGE
+                      </button>
+                    </ion-col>
+                    <ion-col size="6" size-lg class=" btm-btn">
+                      <button class="btn" ion-button margin-right routerLink="/message">
+                        VIEW MESSAGE
+                      </button>
+                    </ion-col>
+                  </ion-row>
+                </ion-grid>
+              </ion-card-content>
+            </ion-card>
+            <ion-row *ngFor="let home of homecategory">
+                <ion-col size="3" size-lg size-xs="12" class="nopadding">
+                  <button class="btn" ion-button margin-right routerLink="/{{home.href}}">
+                    {{home.headingtitle}}
+                  </button>
+                </ion-col>
+              </ion-row>
+      </ion-col>
+
+      <ion-col align-self-center>
+          <ion-grid>
+              
+          
+              <!-- <ion-row>
                             <ion-col size="12" size-lg   class="nopadding">
                                 <button class="btn" ion-button margin-right routerLink="/home">
-                                  TEST 3
+                                 TRANSPORTATION EMERGENCY PROCEDURE GUIDE
                                 </button>
                             </ion-col> 
                           </ion-row>
@@ -114,7 +93,7 @@
                           <ion-row>
                               <ion-col size="12" size-lg  class="nopadding" >
                                   <button class="btn" ion-button margin-right routerLink="/home">
-                                   TEST4
+                                   BUILDING PERSONNEL PROCEDURE GUIDE
                                   </button>
                               </ion-col> 
                             </ion-row>
@@ -122,12 +101,59 @@
                             <ion-row>
                                 <ion-col size="12" size-lg  class="nopadding" >
                                     <button class="btn" ion-button margin-right routerLink="/home">
-                                     ABCD
+                                      SAFE SCHOOL
                                     </button>
                                 </ion-col> 
-                              </ion-row>-->
+                              </ion-row>
                              
-                              <img src="assets/img/logo-merp.png">                                                                                     </ion-grid>
-   
-  </ion-content>
-  
+                              <ion-row>
+                                  <ion-col size="12" size-lg  class="nopadding" >
+                                      <button class="btn" ion-button margin-right routerLink="/home">
+                                       TEST PLAN
+                                      </button>
+                                  </ion-col> 
+                                </ion-row>
+                               
+                                <ion-row>
+                                    <ion-col size="12" size-lg  class="nopadding" >
+                                        <button class="btn" ion-button margin-right routerLink="/home">
+                                          TEST PLAN 2
+                                        </button>
+                                    </ion-col> 
+                                  </ion-row>
+                                 
+                                  <ion-row>
+                                      <ion-col size="12" size-lg   class="nopadding">
+                                          <button class="btn" ion-button margin-right routerLink="/home">
+                                            TEST 3
+                                          </button>
+                                      </ion-col> 
+                                    </ion-row>
+                                   
+                                    <ion-row>
+                                        <ion-col size="12" size-lg  class="nopadding" >
+                                            <button class="btn" ion-button margin-right routerLink="/home">
+                                             TEST4
+                                            </button>
+                                        </ion-col> 
+                                      </ion-row>
+                                     
+                                      <ion-row>
+                                          <ion-col size="12" size-lg  class="nopadding" >
+                                              <button class="btn" ion-button margin-right routerLink="/home">
+                                               ABCD
+                                              </button>
+                                          </ion-col> 
+                                        </ion-row>-->
+          
+              <img src="assets/img/logo-merp.png">
+            </ion-grid>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+
+ 
+
+</ion-content>
