@@ -1,0 +1,78 @@
+<ion-header>
+    <ion-toolbar color="dark" class="header">
+       <ion-buttons slot="start">
+        <button class="home-icon"  routerLink="/message" ><ion-icon name="menu"></ion-icon></button>
+    </ion-buttons>
+      <ion-title>
+       Message
+      </ion-title>
+      
+      <ion-buttons slot="end">
+          <button  class="home-icon" > <ion-icon name="refresh"></ion-icon> </button>
+      </ion-buttons>
+        
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+    <ion-card  class="msgsend-box" >
+        <ion-card-content>
+              <ion-grid>
+                  <ion-row  class="text-center"><h3  class="heading-title">Send a Message</h3></ion-row>
+                  <ion-row>
+                     
+                      <ion-list  class="full-width">
+                      
+                          <ion-item>
+                               <ion-input></ion-input>
+                            </ion-item>
+                        </ion-list>
+                        
+                    </ion-row>
+                    <ion-row  class="text-center"><h3 class="heading-title">Group / Building (Optional)</h3></ion-row>
+                    <ion-row class="text-center">
+                       
+                        <ion-list class="full-width">
+                             <ion-item >
+                              <ion-label>Kolkata</ion-label>
+                              <ion-select >
+                                  <ion-select-option>Emergency</ion-select-option>
+                                  <ion-select-option>Active Shooter</ion-select-option>
+                                  <ion-select-option>Intruder</ion-select-option>
+                                </ion-select>
+                            </ion-item> 
+                          </ion-list>
+                      </ion-row>
+                      <ion-row  class="text-center"><h3 class="heading-title">Send to All / Incident Commanders</h3></ion-row>
+                      <ion-row class="text-center">
+                         
+                          <ion-list class="full-width">
+                               <ion-item >
+                                <ion-label>Incident Commanders</ion-label>
+                                <ion-select >
+                                    <ion-select-option>Incident Commanders</ion-select-option>
+                                    <ion-select-option>All</ion-select-option> 
+                                  </ion-select>
+                              </ion-item> 
+                            </ion-list>
+                        </ion-row>
+                          <ion-row  class="text-center"><h3  class="heading-title">Reply to All / Sender Only </h3></ion-row>
+                          <ion-row class="text-center">
+                         
+                              <ion-list class="full-width">
+                                   <ion-item >
+                                    <ion-label>Reply All</ion-label>
+                                    <ion-select >
+                                        <ion-select-option>Reply All</ion-select-option>
+                                        <ion-select-option>Sender Only</ion-select-option> 
+                                      </ion-select>
+                                  </ion-item> 
+                                </ion-list>
+                                <button class="btn-50" ion-button margin-right routerLink="/emergency">
+                                  Send Message
+                                 </button>
+                            </ion-row>
+                        </ion-grid>
+                           </ion-card-content>
+      </ion-card>
+</ion-content>

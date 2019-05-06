@@ -1,0 +1,346 @@
+ 
+<ion-header>
+		<ion-toolbar color="dark" class="header">
+			 <ion-buttons slot="start">
+				<button class="home-icon"  routerLink="/home"  ><ion-icon name="home"></ion-icon></button>
+		</ion-buttons>
+			<ion-title left>
+			 Arodek
+			</ion-title>
+			<ion-buttons slot="end">
+					<button class="home-icon" routerLink="/icon-keys" > <ion-icon name="help-circle"></ion-icon> </button>
+			</ion-buttons>
+			<ion-buttons slot="end">
+					<button  class="home-icon" ><ion-icon name="filing" routerLink="/files"></ion-icon></button>
+			</ion-buttons>
+			<ion-buttons slot="end">
+					<button  class="home-icon"  routerLink="/update-profile"  ><ion-icon name="person"></ion-icon></button>
+			</ion-buttons>
+			<ion-buttons slot="end">
+					<button  class="home-icon" routerLink="/login"  ><ion-icon name="power"></ion-icon></button>
+			</ion-buttons>
+			
+				
+		</ion-toolbar>
+	</ion-header>
+
+<ion-content class="hm_intro_bg" >
+	
+
+  <ion-slides class="hm_slider" pager="true" #mySlider>
+    <ion-slide>
+		   		<ion-card  class="slide-box">
+						<ion-card-header class="login-heading yellow">
+							 <ion-card-title  class="heading" >INCIDENT MANAGEMENT SYSTEMS - BEGIN</ion-card-title>
+						</ion-card-header>
+					 
+					 <ion-card-content >
+								 <ion-item  >
+								 <h4 class="heading-btm">Discoverer determine type of incident, including</h4>
+									</ion-item>       
+					 </ion-card-content>			 
+					 
+					<ion-card-content  >
+							<ion-row>
+									<ion-col size="12">
+											<ion-list>
+													<ion-item>
+														<ion-label><ion-icon name="radio-button-on"></ion-icon> Fire</ion-label>
+													</ion-item>
+													<ion-item>
+														<ion-label><ion-icon name="radio-button-on"></ion-icon> Server Weather - Hazardaus Material</ion-label>
+													</ion-item>
+													<ion-item>
+															<ion-label><ion-icon name="radio-button-on"></ion-icon> Workplace Voilence</ion-label>
+														</ion-item>
+														<ion-item>
+																<ion-label><ion-icon name="radio-button-on"></ion-icon> Medical Emergency</ion-label>
+															</ion-item>
+																<ion-item>
+														<ion-label><ion-icon name="radio-button-on"></ion-icon> 	Other</ion-label>
+													</ion-item>
+											 
+												</ion-list>
+											 </ion-col>						 
+								</ion-row>
+								<div class="hm_slide_btm_bay" [hidden] ="currentIndex == 2">
+										 
+										 <button ion-button class="btm_btn yellow"(click)="goToNextSlide()">
+											 Next
+										 </button>
+									 </div>
+					</ion-card-content>
+				
+				 
+				 
+					</ion-card>
+    </ion-slide>
+    <ion-slide>
+			 
+					<ion-card  class="slide-box">
+							
+							<ion-toolbar  >
+									<ion-buttons slot="start">
+											<button class="back-icon"  (click)="goToPrevSlide()" ><ion-icon name="arrow-dropleft"></ion-icon></button>
+									</ion-buttons>
+							  
+								 <ion-buttons slot="end">
+										 <button  class="back-icon" routerLink="/login"  ><ion-icon name="browsers"></ion-icon></button>
+								 </ion-buttons>
+								 
+									 
+							 </ion-toolbar>
+								
+							<ion-card-header class="login-heading orange">
+								 <ion-card-title  class="heading" >INCIDENT MANAGEMENT SYSTEMS - NOTIFY</ion-card-title>
+							</ion-card-header>
+						 
+						 <ion-card-content >
+									 <ion-item >
+									 <h4 class="heading-btm">Discoverer Notifies:</h4>
+										</ion-item>       
+						 </ion-card-content>			 
+						 
+						<ion-card-content  >
+								<ion-row>
+										<ion-col size="12"  >
+												<ion-list>
+														<ion-item text-center>
+																<ion-label> Principal or Main Office</ion-label>
+															</ion-item>
+															<ion-item text-center>
+																	<ion-label> or</ion-label>
+																</ion-item>
+																<ion-item text-center>
+																		<ion-label> Call 911</ion-label>
+																	</ion-item>
+																	<ion-item text-center>
+																			<ion-label> or</ion-label>
+																		</ion-item>
+																		<ion-item text-center>
+																				<ion-label> Uses emergency pull station</ion-label>
+																			</ion-item>
+																			 
+												 
+													</ion-list>
+												 </ion-col>						 
+									</ion-row>
+									<div class="hm_slide_btm_bay" [hidden] ="currentIndex == 2">
+											 
+											 <button ion-button class="btm_btn orange"(click)="goToNextSlide()">
+												 Next
+											 </button>
+										 </div>
+						</ion-card-content>
+					
+					 
+					 
+						</ion-card>
+    </ion-slide>
+    <ion-slide>
+				<ion-card  class="slide-box">
+							
+						<ion-toolbar  >
+								<ion-buttons slot="start">
+										<button class="back-icon"  (click)="goToPrevSlide()" ><ion-icon name="arrow-dropleft"></ion-icon></button>
+								</ion-buttons>
+							
+							 <ion-buttons slot="end">
+									 <button  class="back-icon" routerLink="/login"  ><ion-icon name="browsers"></ion-icon></button>
+							 </ion-buttons>
+							 
+								 
+						 </ion-toolbar>
+							
+						<ion-card-header class="login-heading green">
+							 <ion-card-title  class="heading" >INCIDENT MANAGEMENT SYSTEMS - ACT</ion-card-title>
+						</ion-card-header>
+					 
+					 <ion-card-content >
+								 <ion-item >
+								 <h4 class="heading-btm">Principal Obtains:</h4>
+									</ion-item>       
+					 </ion-card-content>			 
+					 
+					<ion-card-content  >
+							<ion-row>
+									<ion-col size="12"  >
+											<ion-list>
+													<ion-item >
+															<ion-label>1. Discription of incident, what happened, location and time of incident</ion-label>
+														</ion-item>
+														<ion-item >
+																<ion-label>2. Number and type of injuries (if any, see Medical tab)</ion-label>
+															</ion-item>
+															<ion-item >
+																	<ion-label>3. Number of people involved</ion-label>
+																</ion-item>
+																<ion-item >
+																		<ion-label>4. Action Taken</ion-label>
+																	</ion-item>
+																	<ion-item >
+																			<ion-label>5. Does the threat still exist?<br>*Incident Command in effect </ion-label>
+																		</ion-item>
+																		 
+											 
+												</ion-list>
+											 </ion-col>						 
+								</ion-row>
+								<div class="hm_slide_btm_bay" [hidden] ="currentIndex == 2">
+										 
+										 <button ion-button class="btm_btn green"(click)="goToNextSlide()">
+											 Next
+										 </button>
+									 </div>
+					</ion-card-content>
+				 
+					</ion-card>
+		</ion-slide>
+		<ion-slide>
+				<ion-card  class="slide-box">
+							
+						<ion-toolbar  >
+								<ion-buttons slot="start">
+										<button class="back-icon"  (click)="goToPrevSlide()" ><ion-icon name="arrow-dropleft"></ion-icon></button>
+								</ion-buttons>
+							
+							 <ion-buttons slot="end">
+									 <button  class="back-icon" routerLink="/login"  ><ion-icon name="browsers"></ion-icon></button>
+							 </ion-buttons>
+							 
+								 
+						 </ion-toolbar>
+							
+						<ion-card-header class="login-heading mehroon">
+							 <ion-card-title  class="heading" >INCIDENT MANAGEMENT SYSTEMS - ASSESS</ion-card-title>
+						</ion-card-header>
+					 
+					 <ion-card-content >
+								 <ion-item >
+								 <h4 class="heading-btm">Incident Commander assesess the situation:</h4>
+									</ion-item>       
+					 </ion-card-content>			 
+					 
+					<ion-card-content  >
+							<ion-row>
+									<ion-col size="12"  >
+											<ion-list>
+													<ion-item >
+															<ion-label><ion-icon name="arrow-dropleft"></ion-icon> Does the incident require addtional outside resources</ion-label>
+														</ion-item>
+													 
+												</ion-list>
+											 </ion-col>						 
+								</ion-row>
+								<div class="hm_slide_btm_bay" [hidden] ="currentIndex == 2">
+										 
+										 <button ion-button class="btm_btn mehroon"(click)="goToNextSlide()">
+											 Next
+										 </button>
+									 </div>
+					</ion-card-content>
+				 
+					</ion-card>
+		</ion-slide>
+		<ion-slide>
+				<ion-card  class="slide-box">
+							
+						<ion-toolbar  >
+								<ion-buttons slot="start">
+										<button class="back-icon"  (click)="goToPrevSlide()" ><ion-icon name="arrow-dropleft"></ion-icon></button>
+								</ion-buttons>
+							
+							 <ion-buttons slot="end">
+									 <button  class="back-icon" routerLink="/login"  ><ion-icon name="browsers"></ion-icon></button>
+							 </ion-buttons>
+							 
+								 
+						 </ion-toolbar>
+							
+						<ion-card-header class="login-heading blue">
+							 <ion-card-title  class="heading" >INCIDENT MANAGEMENT SYSTEMS - CLOSURE</ion-card-title>
+						</ion-card-header>
+					 
+					 <ion-card-content >
+								 <ion-item >
+								 <h4 class="heading-btm">Incident Commander, Crisis Response Team (CRT) and/or District Service Center (DSC) will:</h4>
+									</ion-item>       
+					 </ion-card-content>			 
+					 
+					<ion-card-content  >
+							<ion-row>
+									<ion-col size="12"  >
+											<ion-list>
+													<ion-item >
+															<ion-label>1. Initiate Incident Report.</ion-label>
+														</ion-item>
+														<ion-item >
+																<ion-label>2. Debrief district and school staff.</ion-label>
+															</ion-item>
+															<ion-item >
+																	<ion-label>3. Implement criticle stress debriefing program if needed.</ion-label>
+																</ion-item>
+																 
+												</ion-list>
+											 </ion-col>						 
+								</ion-row>
+								<div class="hm_slide_btm_bay" [hidden] ="currentIndex == 2">
+										 
+										 <button ion-button class="btm_btn blue"(click)="goToNextSlide()">
+											 Next
+										 </button>
+									 </div>
+					</ion-card-content>
+				 
+					</ion-card>
+		</ion-slide>
+		<ion-slide>
+				<ion-card  class="slide-box">
+							
+						<ion-toolbar  >
+								<ion-buttons slot="start">
+										<button class="back-icon"  (click)="goToPrevSlide()" ><ion-icon name="arrow-dropleft"></ion-icon></button>
+								</ion-buttons>
+							
+							 <ion-buttons slot="end">
+									 <button  class="back-icon" routerLink="/login"  ><ion-icon name="browsers"></ion-icon></button>
+							 </ion-buttons>
+							 
+								 
+						 </ion-toolbar>
+							
+						<ion-card-header class="login-heading dark">
+							 <ion-card-title  class="heading " >INCIDENT MANAGEMENT SYSTEMS - END</ion-card-title>
+						</ion-card-header>
+					 
+					 
+					<ion-card-content  >
+							<ion-row>
+									<ion-col size="12"  >
+											<ion-list>
+													<ion-item >
+															<button  class="btm_btn dark pd-20 m-10 full-width" (click)="signin()">
+																	Save As Incident Report
+																</button>
+														</ion-item>
+														<ion-item >
+																<button  class="btm_btn dark  pd-20 m-10  full-width" (click)="signin()">
+																		Save As Drill Log
+																	</button>
+															</ion-item>
+														 
+																 
+												</ion-list>
+											 </ion-col>						 
+								</ion-row>
+						 
+									 
+      
+					</ion-card-content>
+				 
+					</ion-card>
+    </ion-slide>
+  </ion-slides>
+ 
+   
+</ion-content>

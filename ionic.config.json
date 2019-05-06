@@ -1,0 +1,7 @@
+{
+  "name": "merp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

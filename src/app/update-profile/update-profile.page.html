@@ -1,0 +1,59 @@
+<ion-header>
+    <ion-toolbar color="dark" class="header">
+       <ion-buttons slot="start">
+        <button class="home-icon"  routerLink="/home" ><ion-icon name="home"></ion-icon></button>
+    </ion-buttons>
+      <ion-title>
+       Aerodek
+      </ion-title>
+      
+      <ion-buttons slot="end">
+          <button  class="home-icon" routerLink="/login" > <ion-icon name="power"></ion-icon> </button>
+      </ion-buttons>
+        
+    </ion-toolbar>
+  </ion-header>
+
+  
+<ion-content>
+    <ion-card  class="login-box">
+        <ion-card-header class="login-heading">
+           <ion-card-title  class="heading" >Update Profile</ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content >
+            <p class="update">Leave Password fields blank if you do not want to change your password. </p>
+            <ion-item class="form-control">
+               <ion-input    placeholder="Email Address"  ></ion-input>
+            </ion-item>
+          
+            <ion-item class="form-control">
+                <ion-input type="password" placeholder="Current Password"  ></ion-input>
+            </ion-item>
+          
+            <ion-item class="form-control">
+                <ion-input type="password" placeholder=" Password"  ></ion-input>
+            </ion-item>
+            <ion-item class="form-control">
+                <ion-input type="password" placeholder=" Password Confirmation"  ></ion-input>
+            </ion-item>
+          
+            <div text-center margin-top>
+              <button class="btn" ion-button margin-right routerLink="/home">
+                Update
+              </button>
+              
+           
+            </div>
+        </ion-card-content>
+      </ion-card>
+
+     
+ 
+</ion-content>
+<ion-footer>
+    <img src="assets/img/logo-merp.png">
+
+
+    
+  </ion-footer> 
