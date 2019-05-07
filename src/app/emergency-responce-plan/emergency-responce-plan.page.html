@@ -7,23 +7,26 @@
      Arodek
     </ion-title>
     <ion-buttons slot="end">
-        <button class="home-icon" routerLink="/icon-keys" > <ion-icon name="help-circle"></ion-icon> </button>
-    </ion-buttons>
-    <ion-buttons slot="end">
-        <button  class="home-icon" ><ion-icon name="filing"></ion-icon></button>
-    </ion-buttons>
-    <ion-buttons slot="end">
-        <button  class="home-icon"  routerLink="/update-profile"  ><ion-icon name="person"></ion-icon></button>
-    </ion-buttons>
-    <ion-buttons slot="end">
-        <button  class="home-icon" routerLink="/login" ><ion-icon name="power"></ion-icon></button>
-    </ion-buttons>
+            <button class="home-icon" routerLink="/icon-keys" > <ion-icon name="help-circle"></ion-icon> </button>
+        </ion-buttons>
+        <ion-buttons slot="end">
+            <button  class="home-icon" routerLink="/files"><ion-icon name="filing" ></ion-icon></button>
+        </ion-buttons>
+        <ion-buttons slot="end">
+            <button  class="home-icon"  routerLink="/update-profile"  ><ion-icon name="person"></ion-icon></button>
+        </ion-buttons>
+        <ion-buttons slot="end">
+            <button  class="home-icon" routerLink="/login"  ><ion-icon name="power"></ion-icon></button>
+        </ion-buttons>
     
       
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+        <ion-grid>
+                <ion-row>
+                        <ion-col no-padding size-xs="12" size-sm="12" size-lg="3"   size-xl="3">
     <ion-row  *ngFor="let emergency of emergencylist">
         <ion-col size="12" size-lg  class="nopadding" >
             <button class="btn {{emergency.bgcolor}}" ion-button margin-right routerLink="/incident-management-system">
@@ -35,4 +38,7 @@
                      
                       <img src="assets/img/logo-merp.png">   
 
+                    </ion-col> 
+                </ion-row>
+              </ion-grid>
 </ion-content>
