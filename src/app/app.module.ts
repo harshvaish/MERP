@@ -8,7 +8,7 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { DeepakdummyComponent } from './deepakdummy/deepakdummy.component';
+import { DeepakdummyComponent } from './rrr/deepakdummy.component';
 import { IncidentManagementSystemPageModule } from './incident-management-system/incident-management-system.module';
 
 @NgModule({

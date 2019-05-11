@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
-import { DeepakdummyComponent } from '../deepakdummy/deepakdummy.component';
+import { DeepakdummyComponent } from '../rrr/deepakdummy.component';
 
 
 @Component({
