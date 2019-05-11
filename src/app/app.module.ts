@@ -9,11 +9,17 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { DeepakdummyComponent } from './deepakdummy/deepakdummy.component';
+import { IncidentManagementSystemPageModule } from './incident-management-system/incident-management-system.module';
 
 @NgModule({
   declarations: [AppComponent,DeepakdummyComponent],
   entryComponents: [DeepakdummyComponent],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
+  imports: [
+    BrowserModule, 
+    IonicModule.forRoot(), 
+    AppRoutingModule,
+    IncidentManagementSystemPageModule
+  ],
   providers: [
     StatusBar,
     SplashScreen,
@@ -21,4 +27,4 @@ import { DeepakdummyComponent } from './deepakdummy/deepakdummy.component';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule {} 
+export class AppModule {}

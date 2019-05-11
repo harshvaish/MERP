@@ -1,11 +1,17 @@
 
 <ion-content>
+
+    <ion-grid>
+        <ion-row>
+          <ion-col size-xs="12" size-sm="12" size-lg="4" offset-lg="4" offset-xl="4"  size-xl="4">
+             
     <ion-card  class="login-box">
         <ion-card-header class="login-heading">
            <ion-card-title  class="heading" >Mobile Emergency Responce Plan</ion-card-title>
         </ion-card-header>
       
         <ion-card-content >
+           
             
             <ion-item class="form-control">
               <ion-label stacked>Email Address</ion-label>
@@ -18,7 +24,7 @@
             </ion-item>
           
             <div text-center margin-top>
-              <button class="btn" ion-button margin-right routerLink="/home">
+              <button  routerLink="/home" class="btn" ion-button margin-right>
                 SIGN IN
               </button>
               <p  routerLink="/forgetpassword" class="forget">Forget your Password</p>
@@ -26,13 +32,23 @@
             </div>
         </ion-card-content>
       </ion-card>
-
-     
  
-</ion-content>
-<ion-footer>
-    <img src="assets/img/logo-merp.png">
-
+ 
+          </ion-col> 
+        </ion-row>
+      </ion-grid>
 
     
+</ion-content>
+<ion-footer>
+    <ion-grid>
+        <ion-row>
+          <ion-col size-xs="12" size-sm="12" size-lg="4" offset-lg="4" offset-xl="4"  size-xl="4">
+    <img src="assets/img/logo-merp.png">
+            
+
+
+ </ion-col> 
+</ion-row>
+</ion-grid>
   </ion-footer>

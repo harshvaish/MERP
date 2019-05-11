@@ -13,7 +13,7 @@ export class EmergencyResponcePlanPage implements OnInit {
   }
 
   emergencylist = [
-    { bgcolor:'yellow', emergencyheadingtitle:'Incident Management System', href:'emergency-responce-plan' },
+    { bgcolor:'yellow', emergencyheadingtitle:'Incident Management System', href:'incident-management-system' },
     { bgcolor:'yellow', emergencyheadingtitle:'Evacuation' },
     { bgcolor:'yellow', emergencyheadingtitle:'Reverse Evacuation' },
     { bgcolor:'yellow', emergencyheadingtitle:'Lock Down / Secured Perimeter' },

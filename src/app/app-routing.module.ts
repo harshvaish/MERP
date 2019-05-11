@@ -17,6 +17,7 @@ const routes: Routes = [
   { path: 'files', loadChildren: './files/files.module#FilesPageModule' },
   { path: 'emergencyphonenumber', loadChildren: './emergencyphonenumber/emergencyphonenumber.module#EmergencyphonenumberPageModule' },
   { path: 'forgetpassword', loadChildren: './forgetpassword/forgetpassword.module#ForgetpasswordPageModule' },
+  { path: 'incident-management-system', loadChildren: './incident-management-system/incident-management-system.module#IncidentManagementSystemPageModule' },
 ];
 
 @NgModule({
