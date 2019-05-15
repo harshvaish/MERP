@@ -18,6 +18,8 @@ const routes: Routes = [
   { path: 'emergencyphonenumber', loadChildren: './emergencyphonenumber/emergencyphonenumber.module#EmergencyphonenumberPageModule' },
   { path: 'forgetpassword', loadChildren: './forgetpassword/forgetpassword.module#ForgetpasswordPageModule' },
   { path: 'incident-management-system', loadChildren: './incident-management-system/incident-management-system.module#IncidentManagementSystemPageModule' },
+  { path: 'organisation', loadChildren: './organisation/organisation.module#OrganisationPageModule' },
+  { path: 'edit-profile', loadChildren: './edit-profile/edit-profile.module#EditProfilePageModule' },
 ];
 
 @NgModule({

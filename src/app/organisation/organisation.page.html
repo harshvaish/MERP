@@ -1,0 +1,95 @@
+<ion-header>
+  <ion-toolbar color="dark" class="header">
+     <ion-buttons slot="start">
+      <button class="home-icon" routerLink="/home"  ><ion-icon name="home"></ion-icon></button>
+  </ion-buttons>
+    <ion-title left>
+     Arodek
+    </ion-title>
+    <ion-buttons slot="end">
+        <button class="home-icon" routerLink="/icon-keys" ><h5>Admin</h5></button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+        <button  class="home-icon" routerLink="/files"><h5>Edit Profile</h5></button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+        <button  class="home-icon"  routerLink="/update-profile"  ><h5>Logout</h5></button>
+    </ion-buttons> 
+    
+      
+  </ion-toolbar>
+</ion-header>
+
+<ion-content> 
+          <!-- Breadcrumb -->
+          <ul class="breadcrumb">
+             <li><a href="#">Admin</a><ion-icon name="arrow-dropright"></ion-icon></li>
+            <li class="active">My Organization</li>
+          </ul>    
+          <!-- end Breadcrumb -->
+        <h2  class="heading">My Organization</h2>
+          <ion-card  class="login-box">
+                         
+             <ion-card-header class="table-heading">
+                <ion-card-title > 
+                  <ion-row>
+                    <ion-col size="2">
+                        <h5 class="msg-locate m-0">Organization</h5>
+                         </ion-col>
+                         <ion-col  size="2" class="text-right">
+                            <h5 class="m-0">Status</h5>
+                              </ion-col>
+                              <ion-col  size="8" class="text-right">
+                                  <h5 class="m-0"> </h5>
+                                    </ion-col>
+                                     
+                  </ion-row>
+                </ion-card-title>
+             </ion-card-header>
+            
+            <ion-card-content class="m-0 p-0 table" >
+                <ion-row>
+                    <ion-col size="2">
+                        <ion-input class="border-input" placeholder="username" ></ion-input>
+                         </ion-col>
+                         <ion-col  size="2" class="text-right">
+                            <h5 class="m-0"> </h5>
+                              </ion-col>
+                              <ion-col  size="8" class="text-right">
+                                  <h5 class="m-0"> </h5>
+                                    </ion-col>  
+                  </ion-row>
+                 
+                   
+            </ion-card-content>
+          
+            <ion-card-content class="m-0 p-0 table" >
+                <ion-row>
+                    <ion-col size="2">
+                        <h5 class="msg-locate m-0">Aerodek</h5>
+                         </ion-col>
+                         <ion-col  size="2" class="text-right">
+                            <button class="active-btn" >Active</button>
+                              </ion-col>
+                              <ion-col  size="8" class="text-right">
+                               
+                                  <button class="button" >Plan</button>
+                                  <button class="button" >Support File</button>
+                                  <button class="button" >Incident Log</button>
+                                  <button class="button" >Group</button>
+                                  <button class="button" >User(2633)</button>
+                                  <button class="button" >Content Variable</button>
+                                  
+                                    </ion-col>  
+                  </ion-row>
+                 
+                   
+            </ion-card-content>
+          
+           
+           
+            </ion-card>
+      
+           
+
+</ion-content>
